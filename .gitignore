@@ -37,7 +37,6 @@ data/uploads/*
 *.db
 
 # Antigravity & IDE
-.agents/
 .idea/
 .vscode/
 *.swp
