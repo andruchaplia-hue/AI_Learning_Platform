@@ -1,0 +1,28 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Set Python module search path
+ENV PYTHONPATH=/app
+ENV BACKEND_PORT=8001
+ENV BACKEND_HOST=0.0.0.0
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements and install
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application files
+COPY backend /app/backend
+COPY configs /app/configs
+COPY tests /app/tests
+COPY pytest.ini /app/pytest.ini
+COPY .env /app/.env
+
+EXPOSE 8001
+
+CMD ["sh", "-c", "uvicorn backend.api.app:app --host ${BACKEND_HOST:-0.0.0.0} --port ${BACKEND_PORT:-8001}"]

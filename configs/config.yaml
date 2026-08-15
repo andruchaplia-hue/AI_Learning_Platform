@@ -1,0 +1,52 @@
+application:
+  name: "ai-learning-platform"
+  version: "1.0.0"
+  env: "dev"
+
+llm:
+  # Available providers: google, mock
+  provider: "google"
+  
+  google:
+    model: "gemini-3.1-flash-lite"
+    
+generation:
+  temperature: 0.7
+  max_tokens: 300
+  timeout_seconds: 30.0
+
+validation:
+  min_length: 5
+  max_length: 5000
+
+faq:
+  top_k: 3
+  similarity_threshold: 0.4
+  high_confidence_threshold: 0.85
+  faq_json_path: "data/faq.json"
+  vector_db_path: "data/vectorstore/chroma"
+  embedding_model: "gemini-embedding-2"
+  memory_db_path: "data/memory.db"
+
+image_captioning:
+  max_file_size_mb: 50
+  allowed_formats: ["png", "jpeg", "jpg", "webp", "gif"]
+  upload_dir: "data/uploads"
+  max_dimension: 2048
+
+code_generation:
+  dataset_path: "data/fine_tuning/code_generation_dataset.jsonl"
+  max_code_tokens: 1500
+
+auth:
+  jwt_secret_key: "ai-learning-platform-secure-jwt-secret-key"
+  jwt_algorithm: "HS256"
+  access_token_expire_minutes: 1440
+
+content_generation:
+  max_prompt_length: 5000
+  top_k_examples: 2
+  allowed_content_types: ["blog_post", "linkedin_post", "marketing_email", "social_media_post"]
+  planner_temperature: 0.5
+  generator_temperature: 0.7
+  vector_collection_prefix: "user_personalization_"

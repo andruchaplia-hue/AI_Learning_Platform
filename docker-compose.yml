@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    command: uvicorn backend.api.app:app --host ${HOST:-0.0.0.0} --port ${BACKEND_PORT:-8001} --reload
+    ports:
+      - "${BACKEND_PORT:-8001}:${BACKEND_PORT:-8001}"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./configs:/app/configs
+      - ./data:/app/data
+      - ./backend:/app/backend
+      - ./tests:/app/tests
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    ports:
+      - "${FRONTEND_PORT:-8501}:${FRONTEND_PORT:-8501}"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+      - BACKEND_URL=http://backend:${BACKEND_PORT:-8001}
+    volumes:
+      - ./configs:/app/configs
+      - ./frontend:/app/frontend
+      - ./data:/app/data
+    depends_on:
+      - backend

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "category": "Account",
+    "question": "How do I reset my password?",
+    "answer": "Click forgot password."
+  },
+  {
+    "id": 2,
+    "category": "Billing",
+    "question": "What payment methods are accepted?",
+    "answer": "Visa, PayPal, Google Pay."
+  },
+  {
+    "id": 1950,
+    "category": "General",
+    "question": "What camera do I need?",
+    "answer": "Any HD webcam or IP camera is suitable for using the application."
+  },
+  {
+    "id": 1951,
+    "category": "General",
+    "question": "Will the app work on Android 15+ devices?",
+    "answer": "Yes, the application fully supports Android 15 and newer versions."
+  },
+  {
+    "id": 1952,
+    "category": "Connection & Hardware",
+    "question": "What types of cameras are supported by the platform?",
+    "answer": "The platform works with any IP cameras that support RTSP, ONVIF (Profiles S, G, T), or HTTP-MJPEG protocols. We officially recommend using equipment from Hikvision, Dahua, HiWatch, and Uniview for complete compatibility with video analytics features. Analog cameras can be connected via hybrid digital video recorders (DVRs) that support streaming to the cloud."
+  },
+  {
+    "id": 1953,
+    "category": "Connection & Hardware",
+    "question": "Is it mandatory to buy a branded video recorder (NVR)?",
+    "answer": "No. Cameras can stream video directly to our cloud over the Internet (requires a public IP address or P2P/UPnP support on the router). Using a local NVR is optional and only required for local archive redundancy in case of Internet outages."
+  },
+  {
+    "id": 1954,
+    "category": "Connection & Hardware",
+    "question": "What Internet speed is required for a single camera?",
+    "answer": "Requirements depend on the chosen resolution and codec: HD (720p) / H.264: from 1.5 Mbps per stream; Full HD (1080p) / H.264: from 3-4 Mbps per stream; Full HD / H.265: from 1.5-2 Mbps per stream. For unstable connections, we recommend using Dual Stream cameras: the main stream records to the local archive, while the secondary stream goes to the cloud."
+  },
+  {
+    "id": 1955,
+    "category": "Plans, Billing & Storage",
+    "question": "Where are recorded video archives physically stored?",
+    "answer": "All customer data is encrypted using the AES-256 algorithm and stored in secure Tier III certified data centers adhering to international data security standards (GDPR compliant)."
+  },
+  {
+    "id": 1956,
+    "category": "Plans, Billing & Storage",
+    "question": "What happens to the archive after the retention period expires?",
+    "answer": "The system operates on a FIFO (First-In, First-Out) circular buffer principle. As soon as the allocated retention limit is reached, the oldest recordings are automatically deleted and replaced by new ones. If you need to keep a specific clip, you can export it to a local MP4/MKV file via the web interface or mobile application."
+  },
+  {
+    "id": 1957,
+    "category": "Plans, Billing & Storage",
+    "question": "How does automatic billing with a linked card work?",
+    "answer": "At the end of each billing cycle (calendar month or anniversary of first payment), the system automatically processes a recurring payment from the linked credit card. A notification and preliminary invoice are sent to the registered email 3 days before charging."
+  },
+  {
+    "id": 1958,
+    "category": "Plans, Billing & Storage",
+    "question": "Can I freeze my subscription during vacation or seasonal business closure?",
+    "answer": "Yes, the Account Freeze feature is available in your personal dashboard. When activated, recurring billing is paused, but read-only access to view existing archives is maintained for 30 days, after which cameras are moved to archived status without losing settings."
+  },
+  {
+    "id": 1959,
+    "category": "Mobile App & Access",
+    "question": "What platforms is the application available on?",
+    "answer": "Our official client apps are available for: iOS (version 15.0 and above); Android (version 9.0 and above, including tablet optimization); Web version (works in all modern browsers including Google Chrome, Safari, Mozilla Firefox, and Microsoft Edge without plugins using WebRTC)."
+  },
+  {
+    "id": 1960,
+    "category": "Mobile App & Access",
+    "question": "How can I grant access to staff without sharing master password?",
+    "answer": "In the 'Access Management' section, you can create an unlimited number of secondary user accounts with customizable roles. Individual permissions can be configured per staff member: for example, allowing live video viewing only without archive download permissions, or restricting access to specific warehouse cameras."
+  },
+  {
+    "id": 1961,
+    "category": "Mobile App & Access",
+    "question": "What happens if Internet connection is lost on-site?",
+    "answer": "If the camera is equipped with local storage (SD card or NVR), it continues recording video locally. Once Internet connectivity is restored, our system automatically performs backfill synchronization and uploads the missing fragments to the cloud (provided the camera model supports this feature)."
+  },
+  {
+    "id": 1962,
+    "category": "Video Analytics & Alerts",
+    "question": "What motion detection features are available out of the box?",
+    "answer": "Basic motion detection operates pixel-by-pixel. Additionally, on Business and Pro plans, built-in neural network detectors are available: human and silhouette detection (filtering out false alarms from animals, shadows, and swaying branches), virtual tripwire line crossing (perimeter control), intrusion detection (monitoring unauthorized presence after business hours), and abandoned object detection."
+  },
+  {
+    "id": 1963,
+    "category": "Video Analytics & Alerts",
+    "question": "Where are instant alarm notifications delivered?",
+    "answer": "Alert notifications can be dispatched simultaneously to multiple channels: Mobile push notifications (with a snapshot preview); Telegram chatbot (requires linking your account in profile settings); Email alerts with an attached 10-second video clip."
+  },
+  {
+    "id": 1964,
+    "category": "Video Analytics & Alerts",
+    "question": "Can video analytics be integrated with POS cash registers?",
+    "answer": "Yes. We offer pre-built integration modules for popular POS systems (1C, r_Keeper, Frontol, Square, Shopify POS). Transaction receipts are overlaid on top of the live video stream and indexed in the archive. You can search for specific sold items or cancelled receipts and jump directly to that timestamp."
+  },
+  {
+    "id": 1965,
+    "category": "Technical Support & Troubleshooting",
+    "question": "How do I reach technical support outside of business hours?",
+    "answer": "Technical support operates 24/7/365. For emergency issues (offline cameras, server outages): contact via the hotline phone number or urgent chat in the dashboard (average response time within 5 minutes). For general setup inquiries: via email at support@platform.com (response within 2 hours)."
+  },
+  {
+    "id": 1966,
+    "category": "Technical Support & Troubleshooting",
+    "question": "Where can I monitor server and cloud uptime status?",
+    "answer": "Real-time system availability information is published on our public status page: status.platform.com. Scheduled maintenance history and announcements are also posted there."
+  },
+  {
+    "id": 1967,
+    "category": "Test",
+    "question": "Test unique question?",
+    "answer": "Test answer."
+  }
+]

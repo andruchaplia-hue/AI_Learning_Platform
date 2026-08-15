@@ -1,0 +1,26 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Set Python module search path
+ENV PYTHONPATH=/app
+ENV FRONTEND_PORT=8501
+ENV FRONTEND_HOST=0.0.0.0
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements and install
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy configuration and frontend code
+COPY .streamlit /app/.streamlit
+COPY frontend /app/frontend
+COPY .env /app/.env
+
+EXPOSE 8501
+
+CMD ["sh", "-c", "streamlit run frontend/Home.py --server.port=${FRONTEND_PORT:-8501} --server.address=${FRONTEND_HOST:-0.0.0.0} --server.maxUploadSize=50"]

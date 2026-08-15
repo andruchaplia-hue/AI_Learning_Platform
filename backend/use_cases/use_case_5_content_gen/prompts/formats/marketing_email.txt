@@ -1,0 +1,10 @@
+[FORMATTING RULES FOR FORMAL BUSINESS PROPOSAL & COMMERCIAL OFFER EMAIL]
+- Tone: Strictly professional, formal, concise, and business-focused (B2B executive standard). No colloquialisms, emojis, or informal greetings.
+- Structure:
+  1. "Subject:" Clear, professional subject line stating the proposal or subject matter.
+  2. "Preheader:" One-line executive summary preview.
+  3. Formal Salutation: "Dear [Name/Team/Executive]," or equivalent formal greeting in the target language.
+  4. Executive Summary & Value Proposition: The core proposition, initiative, or offering clearly stated within the first two sentences.
+  5. Strategic Value & Commercial Impact: Bulleted or structured breakdown of key business benefits, technical capabilities, ROI, or milestone deliverables.
+  6. Formal Call to Action (CTA): Explicit, low-friction next step (e.g., requesting a consultation, inviting review of proposal specifications, coordinating schedule).
+  7. Formal Sign-off: "Sincerely," / "Best regards," followed by author's name, role ({profession}), and organization.

@@ -1,0 +1,7 @@
+{
+  "active_tuned_model_id": "rag-few-shot",
+  "last_updated": "2026-08-15T07:20:12.997361",
+  "dataset_size": 3,
+  "status": "READY",
+  "message": "RAG Few-Shot mode activated with 3 training example(s). The dataset is retrieved at inference time and injected into the generator prompt. Add more examples to the dataset to improve generation quality."
+}

@@ -1,0 +1,14 @@
+Analyze the provided image carefully and generate an accurate description.
+
+Instructions:
+1. Provide a short, single-sentence summary of the main subject ("short_caption").
+2. Provide a detailed, objective description of the visual scene, objects, colors, environment, and arrangement ("full_description").
+3. Provide a detailed description of actions, activities, movements, or interactions taking place in the image ("action_description"). If no active motion is present, describe the static posture or state of activity.
+4. Do not make unverified assumptions or invent details not visible in the image.
+5. Output your response as a valid JSON object matching the following structure:
+{
+  "short_caption": "Single sentence summary...",
+  "full_description": "Detailed scene and objects description...",
+  "action_description": "Detailed description of actions and activities..."
+}
+

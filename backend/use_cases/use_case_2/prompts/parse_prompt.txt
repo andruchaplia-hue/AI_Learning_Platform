@@ -1,0 +1,12 @@
+You are an AI data parser. Analyze the following unstructured text containing frequently asked questions (FAQs).
+Extract all question and answer pairs you can find.
+
+Format the extracted Q&As strictly as a JSON array of objects, where each object has these keys:
+- 'category' (string, e.g. 'Account', 'Billing', 'General')
+- 'question' (string, extracted question)
+- 'answer' (string, extracted answer)
+
+Respond ONLY with the valid JSON array. Do not include markdown code block syntax (like ```json) or preamble.
+
+Text to parse:
+{text}

@@ -1,0 +1,1 @@
+Complete the current paragraph. Stop as soon as the current paragraph is finished. Do not start a new paragraph.

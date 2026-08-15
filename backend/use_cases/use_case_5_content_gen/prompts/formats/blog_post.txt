@@ -1,0 +1,9 @@
+[FORMATTING RULES FOR JOURNALISTIC ARTICLE & BLOG POST]
+- Apply the editorial style of top tech/industry publications (e.g., TechCrunch, Ars Technica, Habr editorial).
+- Structure:
+  1. H1 Headline: Informative, sharp, and engaging without clickbait.
+  2. Lead Paragraph (bold or emphatic): Summarizes the core development, discovery, or event right away (the "who, what, why now").
+  3. Factual Narrative & Context: Background details, concrete facts/numbers, technical or industry significance.
+  4. First-Person Analysis & Author Commentary: The author's direct observations, quotes, architectural insights, or personal findings.
+  5. What It Means & Future Outlook: Forward-looking summary and implications for the field.
+- Tone: Crisp, journalistic, insightful, well-paced, and backed by facts.

@@ -1,0 +1,16 @@
+You are an expert Software Requirements Analyzer.
+Analyze the following natural language request and optional target code.
+Extract key requirements, language/framework, target functions/classes, and constraints.
+Respond ONLY with a valid JSON object matching this structure:
+{
+  "language": "python",
+  "framework": "fastapi",
+  "key_functions": ["func1", "func2"],
+  "constraints": ["constraint1"]
+}
+
+Request:
+{{ $prompt }}
+
+Target File Context (if provided):
+{{ $target_content }}

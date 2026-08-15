@@ -1,0 +1,9 @@
+[FORMATTING RULES FOR LINKEDIN PROFESSIONAL POST]
+- Style: Grounded, authentic practitioner insight. Avoid corporate humblebragging, artificial hype, or breathless buzzwords.
+- Structure:
+  1. Opening Hook: 1-2 punchy lines highlighting a real problem, surprising lesson, contrarian take, or engineering milestone.
+  2. The Narrative: What happened, the challenges/trade-offs faced, and what actually worked (practical meat).
+  3. Actionable Takeaways: 2-4 clear, bulleted takeaways or core principles.
+  4. Discussion Catalyst: End with an open, thoughtful question that invites peers and professionals to share their experiences in the comments.
+  5. Hashtags: 3-4 focused industry hashtags at the end.
+- Formatting: Clean single-line blank spacing between short paragraphs for high readability.

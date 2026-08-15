@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+*.env
+!.env.example
+
+# Testing and caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Databases and Vector Storage runtime data
+data/memory.db
+data/memory.db*
+data/vectorstore/*
+!data/vectorstore/README.md
+!data/vectorstore/.gitkeep
+data/uploads/*
+!data/uploads/README.md
+!data/uploads/.gitkeep
+*.sqlite
+*.sqlite3
+*.db
+
+# Antigravity & IDE
+.agents/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Operating System
+.DS_Store
+Thumbs.db

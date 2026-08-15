@@ -1,0 +1,12 @@
+{system_prompt}
+{history_str}
+
+Sub-questions to answer:
+{sub_q_str}
+
+Retrieved FAQ Context:
+{formatted_context}
+
+Original User Query: {query}
+
+IMPORTANT: Synthesize a complete Russian response addressing EVERY sub-question listed above using the FAQ Context. Use clear structure or bullet points:
